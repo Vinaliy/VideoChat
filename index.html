@@ -14,7 +14,8 @@
 <header id="head">
 
 <div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
  <div class="head_nav">
  <h2 style="float: left; color: rgba(255,255,255,0.80); margin-left: 1em;"><img src="img/logo1.png" height="60" alt=""/>Lovemeet</h2>
  
@@ -31,14 +32,16 @@
  
   <div class="carousel-inner">
     <div class="carousel-item active" data-interval="2000">
+    
         <img src="img/slayder2.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           <H2>Знакомства с девушками</H2>
-    <button type="button" class="btn btn-success">НАЧАТЬ ПОИСК</button>
+    <a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-success btn-lg" role="button" aria-pressed="true" style="width:19em;">НАЧАТЬ ПОИСК</a>
     <p>789</p>
   </div>
       </div>
     <div class="carousel-item" data-interval="2000">
+    
       <img src="img/slayder1.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item" data-interval="2000">
@@ -50,7 +53,21 @@
     </div>
   </div>
 </div></div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+   <div class="head_nav">
+ <h2 style="float: left; color: rgba(255,255,255,0.80); margin-left: 1em;"><img src="img/logo1.png" height="60" alt=""/>Lovemeet</h2>
+ 
+ <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="float:right; margin-bottom: 0.1em!important;">
+   <li class="nav-item">
+    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="color:#D5E7F5">Главная</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false" style="color:#D5E7F5">Видео чат</a>
+  </li>
+  
+  </li>
+</ul></div>
+  </div>
 
 </div>
 
