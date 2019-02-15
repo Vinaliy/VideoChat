@@ -14,7 +14,7 @@
 	font-weight: 700;
 }
 .logo_text img{
-	height: 100px !important;
+	height: 100px;
 }
 .logo_text1 {
 	color: #ff316a;
@@ -129,6 +129,10 @@
 	padding-inline-end: 15em;
     padding-inline-start: 15em;
     font-size: 1.2em;
+}
+.chat_tab_style {
+	background-color:#fff;
+	padding: 1em;
 }
 @media screen and (max-width: 1300px) {
 .logo_text {
