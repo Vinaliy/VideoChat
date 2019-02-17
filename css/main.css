@@ -98,7 +98,11 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffda8ba3",endColorstr="#ff036078",GradientType=0);
     }
 }
+ .carousel-box2 {
 
+	background-color:rgba(252,238,238,0.89); 
+
+}
 .carousel-box1 {
 	max-width: 30%; 
 	top:25%; 
