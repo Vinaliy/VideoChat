@@ -66,7 +66,7 @@
       <a class="dropdown-item" href="#"><img src="img/Turkey-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
   </li>
 <li class="nav-item">
-    <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="img/Users-Checked-User-icon.png" height="30" alt="Чат" title="Чат \ Сообщения"> Войти</a></a>
+   <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="modal" href="#registerleModal" aria-controls="pills-profile" aria-selected="false"><img src="img/Users-Checked-User-icon.png" height="30" alt="Чат" title="Чат \ Сообщения"> Войти</a></a>
   </li>
 </ul>
   </div>
@@ -143,7 +143,7 @@
       <a class="dropdown-item" href="#"><img src="img/Turkey-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
   </li>
 <li class="nav-item">
-    <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="img/Users-Checked-User-icon.png" height="30" alt="Чат" title="Чат \ Сообщения"> Войти</a></a>
+    <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="modal" href="#registerleModal" aria-controls="pills-profile" aria-selected="false"><img src="img/devushki2.png" class="rounded mr-2" style="height:35px;" alt="..."></a>
   </li>
 </ul>
   </div>
@@ -233,7 +233,7 @@
   <div class="tab-pane fade chat_tab_style" id="myMessages" role="tabpanel" aria-labelledby="myMessages-tab">
  
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
-  <div class="toast-header">
+  <div class="toast-header gradient">
     <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
     <strong class="mr-auto">Анюта</strong>
     <small class="text-muted">2 часа назад</small>
@@ -247,7 +247,7 @@
 </div>
 
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
-  <div class="toast-header">
+  <div class="toast-header gradient">
     <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
     <strong class="mr-auto">Наташа</strong>
     <small class="text-muted">2 секунды назад</small>
@@ -260,7 +260,7 @@
   </div>
 </div>
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
-  <div class="toast-header">
+  <div class="toast-header gradient">
     <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
     <strong class="mr-auto">Анюта</strong>
     <small class="text-muted">2 часа назад</small>
@@ -274,7 +274,7 @@
 </div>
 
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
-  <div class="toast-header">
+  <div class="toast-header gradient">
     <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
     <strong class="mr-auto">Наташа</strong>
     <small class="text-muted">2 секунды назад</small>
@@ -653,6 +653,75 @@
       <div class="modal-footer">
 
         <button type="button" class="btn btn-secondary">Подтвердить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal ВОЙТИ \ РЕГИСТРАЦИЯ-->
+<div class="modal fade" id="registerleModal" tabindex="-1" role="dialog" aria-labelledby="registerleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Авторизация:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs" id="myTab_register" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#to_come_in_tab" role="tab" aria-controls="profile" aria-selected="false">Войти</a>
+  </li>      
+  <li class="nav-item">
+ <a class="nav-link active" id="home-tab" data-toggle="tab" href="#register_tab" role="tab" aria-controls="home" aria-selected="true">Зарегистрироваться</a>
+ 
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent_register">
+  <div class="tab-pane fade show active" id="register_tab" role="tabpanel" aria-labelledby="home-tab">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email </label>
+    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="введите ваш Email">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Придумай пороль (мин 8 знаков)">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Запомнить</label>
+  </div>
+
+    <a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true" style="margin-top:3em;">Зарегистрироваться</a>
+</form>
+  </div>
+  <div class="tab-pane fade" id="to_come_in_tab" role="tabpanel" aria-labelledby="profile-tab">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email </label>
+    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="введите ваш Email">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Ваш пороль ">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Запомнить</label>
+  </div>
+  <a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true" style="margin-top:3em;">Войти</a>
+</form>
+  </div>
+  
+</div>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center">или войдите с помощью</p>
       </div>
     </div>
   </div>
