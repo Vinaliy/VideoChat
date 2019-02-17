@@ -10,6 +10,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="apple-touch-icon" href="img/icon.png" sizes="180x180">
   <link rel="icon" type="image/png" sizes="16x16" href="img/icon.png">
+  <script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
 </head>
 
 <body>
@@ -66,8 +71,7 @@
       <a class="dropdown-item" href="#"><img src="img/Turkey-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
   </li>
 <li class="nav-item">
-   <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="modal" href="#registerleModal" aria-controls="pills-profile" aria-selected="false"><!--<img src="img/Users-Checked-User-icon.png" height="30" alt="Чат" title="Чат \ Сообщения">--> Войти</a></a>
-  </li>
+   <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="modal" data-placement="top" title="зарегистрироваться \ войти"  href="#registerleModal" aria-controls="pills-profile" aria-selected="false"><!--<img src="img/Users-Checked-User-icon.png" height="30" alt="Чат" title="Чат \ Сообщения">--> Войти</a></li>
 </ul>
   </div>
 </nav>
@@ -720,8 +724,26 @@
   
 </div>
       </div>
-      <div class="modal-footer  justify-content-center">
-        <p class="text-center">или войдите с помощью</p>
+      <div class=" justify-content-center">
+        <div><p class="text-center">или войдите с помощью</p></div>
+        <ul class="nav justify-content-center">
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_visa.png" height="20" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_master.png" height="20" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_web.png" height="20" alt=""/></a>
+      </li>
+
+
+    </ul>
+    
       </div>
     </div>
   </div>
