@@ -161,12 +161,12 @@
 
 
  <div class="container-fluid">
- <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;"> гость345 </span></h4>
+ <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;"> гость345 </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a></h4>
  <div class="row" style=" padding-top:1em;">
    <div class="col-sm-8">
 
     <div style="width:100%;">
-    <div class="alert gradient alert-dismissible fade show container-fluid h-100 d-inline-block" role="alert" style=" position:absolute; z-index:2000;margin-top: -2px;border: 0; width:97%;">
+    <div class="alert gradient alert-dismissible fade show container-fluid h-100 d-inline-block" role="alert" style=" position:absolute; z-index:20;margin-top: -2px;border: 0; width:97%;">
 
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
@@ -198,7 +198,7 @@
 </div>
 </div>
    <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -6em;">
-  <button type="button" class="btn float-left" id="capturewebcam"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 1000;"></button>
+  <button type="button" class="btn float-left" id="capturewebcam"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;"></button>
   <h5 class="ml-auto align-items-center p-2 bd-highlight" style="position:relative; z-index:100; color:#808182;">Осталось: <a href="#"><span class="badge badge-success"> 10:00 мин.</span></a> </h5>
        </div>
 <video class="embed-responsive" height="100%" id="webcamfeed" autoplay controls style="#"></video>
@@ -209,7 +209,7 @@
 
 
     </div>
-    <div class="col justify-content-center">
+    <div class="col">
 <div class="container-fluid flex-column"><ul class="nav nav-tabs list-unstyled" id="myTab_chat" role="tablist">
 <li class="nav-item dropdown">
  <a class="nav-link dropdown-toggle navbar-brand bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/filled-chat.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
@@ -232,7 +232,7 @@
 
 </ul></div>
 
-<div class="tab-content align-items-stretch" id="myTabContent">
+<div class="tab-content overflow-auto align-items-stretch" id="myTabContent" style="height:500px;">
 
   <div class="tab-pane fade show active chat_tab_style" id="myChat" role="tabpanel" aria-labelledby="myChat-tab">
 <ul class="list-unstyled">
@@ -268,6 +268,33 @@
   </div>
   <div class="tab-pane fade chat_tab_style" id="myMessages" role="tabpanel" aria-labelledby="myMessages-tab">
 
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Анюта</strong>
+    <small class="text-muted">2 часа назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Привет!
+  </div>
+</div>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Наташа</strong>
+    <small class="text-muted">2 секунды назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Как дела? Напиши мне.
+  </div>
+</div>
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
   <div class="toast-header gradient">
     <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
@@ -559,6 +586,28 @@
   </div>
 </nav>
 
+<!-- Modal РЕДАКТИРОВАНИЕ ИМЕНИ-->
+<div class="modal fade" id="editing_naemleModal" tabindex="-1" role="dialog" aria-labelledby="editingleModalCenter-Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle"><img src="img/editing.png" class="mr-3" style="height:54px;" alt="...">РЕДАКТИРОВАНИЕ ИМЕНИ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <input class="form-control form-control-lg" type="text" placeholder="гость345">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+
+    <input type="button" class="btn btn-success"  data-dismiss="modal" id="capturewebcam" value="OK"/>
+
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Modal Контакты-Друзья-Вызов девушки он-лайн-->
 <div class="modal fade" id="frends_onlaynleModalCenter" tabindex="-1" role="dialog" aria-labelledby="frends_onlaynleModalCenter-Title" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -570,7 +619,7 @@
         </button>
       </div>
       <div class="modal-body">
-      <h6>г. Одесса. 18 лет.</h6>
+      <h6> 18+ </h6>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
