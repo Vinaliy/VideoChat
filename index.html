@@ -7,50 +7,27 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/styles2.css">
   <link rel="stylesheet" href="css/html5.webcam.demo.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="apple-touch-icon" href="img/icon.png" sizes="180x180">
   <link rel="icon" type="image/png" sizes="16x16" href="img/icon.png">
-  <script>
-  $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-  </script>
+
+  <!-- Libs and Scripts -->
+<script src="js/webrtc-v2.js"></script>
+
 </head>
 
 <body>
 <!--------------------------------------- HEADER ________________------------->
-<header id="head">
+<div id="head">
 <!--------------------------------------- ВКЛАДКИ _------------------------>
 
 <div class="tab-content gradient" id="pills-tabContent">
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><!----ПЕРВАЯ ВКЛАДКА--->
 <!--------------------------------------- СЛАЙДЕР _------------------------>
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <!--------------------------------------- НАВИГАЦИЯ 1 ВКЛАДКИ _------------------------>
- <!--<div class="head_nav">
- <span class="logo_text" style=""><img src="img/logo1.png" alt=""/>Lovemeet</span>
 
- <ul class="nav nav-pills mb-3 nav-bar-home-screen" id="pills-tab" role="tablist">
-   <li class="nav-item">
-    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="color:#000;">Главная</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Видео чат</a>
-  </li>
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">RU</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">En</a>
-      <a class="dropdown-item" href="#">It</a>
-      <a class="dropdown-item" href="#">Rom</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Ua</a>
-    </div>
-  </li>
-
-</ul>
-</div>-->
   <!--------------------------------------- НАВИГАЦИЯ 1 ВКЛАДКИ ДЕСКТОП _КОНЕЦ------------------->
 
   <!--------------------------------------- НАВИГАЦИЯ 1 ВКЛАДКИ _МОБИЛНОЕ--------------->
@@ -133,13 +110,7 @@
   </button>
   <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
     <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-<!--   <li class="nav-item">
-    <a class="nav-link navbar-bran bg-transparentd" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="color:#000;"><img src="img/home.png" height="30" alt="Чат" title="Чат \ Сообщения"></a></a>
-  </li>-->
- <!-- <li class="nav-item">
-    <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="img/videochat_icon.png" height="30" alt="Чат" title="Чат \ Сообщения"></a>
 
-  </li>-->
 <li class="nav-item dropdown">
     <a class="nav-link navbar-brand dropdown-toggle bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/Russia-flag.png" height="30" alt="Чат" title="Чат \ Сообщения"></a>
     <div class="dropdown-menu">
@@ -161,54 +132,116 @@
 
 
  <div class="container-fluid">
- <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;"> гость345 </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a></h4>
+ <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;" id="number"></span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a></h4>
  <div class="row" style=" padding-top:1em;">
    <div class="col-sm-8">
 
     <div style="width:100%;">
-    <div class="alert gradient alert-dismissible fade show container-fluid h-100 d-inline-block" role="alert" style=" position:absolute; z-index:20;margin-top: -2px;border: 0; width:97%;">
-
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <h2 class="text-center">Вам 18+</h2>
-
-  <div class="card-deck  justify-content-center">
-  <div class="card bg-transparent" style="max-width: 15em; border:0;">
-    <img src="img/men.png" class="card-img-top mx-auto d-block" alt="...">
-    <div class="card-body">
-      <h5 class="card-title text-center">вы</h5>
-
-    </div>
-    <div class="card-footer" style="border:0;">
-      <button type="button" class="btn btn-outline-info btn-lg btn-block" data-dismiss="alert">Мужчина</button>
-    </div>
-  </div>
-  <div class="card bg-transparent" style="max-width: 15em; border:0;">
-    <img src="img/women.png" class="card-img-top  mx-auto d-block" alt="...">
-    <div class="card-body">
-      <h5 class="card-title text-center">вы</h5>
-
-    </div>
-    <div class="card-footer" style="border:0;">
-      <button type="button" class="btn btn-outline-warning btn-lg btn-block"  data-toggle="tab" data-target="#pills-settings">Женщина</button>
-    </div>
-  </div>
-
-</div>
-</div>
-   <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -6em;">
-  <button type="button" class="btn float-left" id="capturewebcam"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;"></button>
-  <h5 class="ml-auto align-items-center p-2 bd-highlight" style="position:relative; z-index:100; color:#808182;">Осталось: <a href="#"><span class="badge badge-success"> 10:00 мин.</span></a> </h5>
-       </div>
-<video class="embed-responsive" height="100%" id="webcamfeed" autoplay controls style="#"></video>
+    
+  
+<!--<video class="embed-responsive" height="100%" id="webcamfeed" autoplay controls style="#"></video>
 <div class="text-center" style="position: relative; margin-top: -5em; margin-bottom:5em;">
     <input type="button" class="btn btn-success btn-lg active" id="capturewebcam" value="Начать поиск"/>
   </div>
-</div>
+</div>-->
 
 
-    </div>
+<!-- your number -->
+
+
+<!-- camera -->
+<!--<div><button id="startcam">Start Camera</button></div>-->
+<div><button id="stopcam">Stop Camera</button></div>
+
+<!-- dialer/calling -->
+<!--<div><button id="startcall">Start Call</button><input id="dial"></div>-->
+<div><button id="stopcall">Stop Call</button></div>
+ <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -6em;">
+  <button type="button" class="btn float-left" id="startcam"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;"></button>
+  <h5 class="ml-auto align-items-center p-2 bd-highlight" style="position:relative; z-index:100; color:#808182;">Осталось: <a href="#"><span class="badge badge-success"> 10:00 мин.</span></a> </h5>
+       </div>
+<!-- Video Feeds -->
+<div class="embed-responsive" id="video-out" style="width: 100%; height: 480px; background-color: #00000091;"></div>
+<style>video:first-child { display:block}
+video:nth-child(2) { width: 100px;}</style>
+<div class="text-center" style="position: relative; margin-top: -5em; margin-bottom:5em;">
+    <input type="button" class="btn btn-success btn-lg active" id="startcall" value="Начать"/><input id="dial">
+  </div>
+
+<script>(()=>{
+    'use strict';
+
+    // ~Warning~ You must get your own API Keys for non-demo purposes.
+    // ~Warning~ Get your PubNub API Keys: https://www.pubnub.com/get-started/
+    // The phone *number* can by any string value
+
+    let   session = null;
+    const number  = Math.ceil(Math.random()*10000);
+    const phone   = PHONE({
+        number        : number
+    ,   autocam       : false
+    ,   publish_key   : 'pub-c-561a7378-fa06-4c50-a331-5c0056d0163c'
+    ,   subscribe_key : 'sub-c-17b7db8a-3915-11e4-9868-02ee2ddab7fe'
+    });
+
+    // Debugging Output
+    phone.debug( info => console.info(info) );
+
+    // Show Number
+    phone.$('number').innerHTML = 'Number: ' + number;
+
+    // Start Camera
+    phone.bind(
+        'mousedown,touchstart'
+    ,   phone.$('startcam')
+    ,   event => phone.camera.start()
+    );
+
+    // Stop Camera
+    phone.bind(
+        'mousedown,touchstart'
+    ,   phone.$('stopcam')
+    ,   event => phone.camera.stop()
+    );
+
+    // Local Camera Display
+    phone.camera.ready( video => {
+        phone.$('video-out').appendChild(video);
+    });
+
+    // As soon as the phone is ready we can make calls
+    phone.ready(()=>{
+
+        // Start Call
+        phone.bind(
+            'mousedown,touchstart'
+        ,   phone.$('startcall')
+        ,   event => session = phone.dial(phone.$('dial').value)
+        );
+
+        // Stop Call
+        phone.bind(
+            'mousedown,touchstart'
+        ,   phone.$('stopcall')
+        ,   event => phone.hangup()
+        );
+
+    });
+
+    // When Call Comes In or is to be Connected
+    phone.receive(function(session){
+
+        // Display Your Friend's Live Video
+        session.connected(function(session){
+            phone.$('video-out').appendChild(session.video);
+        });
+
+    });
+
+})();</script>
+
+    </div></div>
+    
     <div class="col">
 <div class="container-fluid flex-column"><ul class="nav nav-tabs list-unstyled" id="myTab_chat" role="tablist">
 <li class="nav-item dropdown">
