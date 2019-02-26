@@ -388,7 +388,7 @@ const PHONE = window.PHONE = config => {
         let talk   = get_conversation(number);
         vid.setAttribute( 'autoplay',    'autoplay'    );
         vid.setAttribute( 'playsinline', 'playsinline' );
-		vid.className = 'someClassName';
+		vid.className = 'myvideo_cam';
         vid.srcObject = obj.streams[0];
         talk.video = vid;
         talk.connect(talk);
