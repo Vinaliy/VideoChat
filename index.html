@@ -170,7 +170,7 @@ video:nth-child(2) {
 
 
  <div class="container-fluid">
- <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;"> гость345 </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a></h4>
+ <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;"> гость345 </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Статус: <span class="badge badge-danger"> Премиум </span></h4>
  <div class="row" style=" padding-top:1em;">
    <div class="col-sm-8">
 
@@ -256,12 +256,18 @@ video:nth-child(2) {
    <!-- <button id="open-room">Open Room</button>-->
     <!--<button id="join-room">Join</button>-->
     <!--<button id="open-or-join-room">Auto</button>-->
-<div class="btn-group" role="group">
+<div class="btn-group btn-group-sm" role="group">
   <button type="button" class="btn btn-success btn-lg active" id="join-room">Начать поиск</button>
   
   <input type="text" id="room-id" value="vidim">
   <button class="btn btn-secondary" id="open-or-join-room">Auto</button>
   <button class="btn btn-secondary" id="btn-leave-room">Закрыть</button>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseHistori" aria-expanded="false" aria-controls="collapseHistori">История</button>
+  <div class="btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="checkbox" checked autocomplete="off"> Добавить в друзья
+  </label>
+</div>
 </div>
  
     
@@ -373,7 +379,44 @@ connection.onopen = function() {
 </script>
 
 </div>
-
+<div class="card-deck collapse" id="collapseHistori" style="padding-bottom:1em;">
+  <div class="card">
+    <img src="img/women-histori-1.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-success">on</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">3 мин. назад <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-2.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-danger">of</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">1 мин. назад <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-3.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-success">on</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">Вчера <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-4.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-danger">of</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">03.02.2019 <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+</div>
 
     </div>
     <div class="col">
