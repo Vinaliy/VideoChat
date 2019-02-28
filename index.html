@@ -22,6 +22,7 @@
 
 </head>
 
+
 <body>
 <!--------------------------------------- HEADER ________________------------->
 <header id="head">
@@ -238,7 +239,7 @@ video:nth-child(2) {
     <input type="checkbox" checked autocomplete="off"> Добавить в друзья
   </label>
 </div>
-<button class="btn btn-warning text-white" id="#">Подарок</button>
+<button class="btn btn-warning text-white" data-toggle="modal" data-target="#presentModalCenter">Подарок</button>
 </div>
  
     
@@ -1011,6 +1012,66 @@ connection.onopen = function() {
 
     </ul>
 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Подарки-->
+<div class="modal fade" id="presentModalCenter" tabindex="-1" role="dialog" aria-labelledby="presentModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Выбрать подарок:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card-deck">
+  <div class="card">
+    <img src="img/kisspng.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">10 минут</h5>
+      
+    </div>
+    <div class="card-footer">
+      <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Выбрать</label>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/kisspng.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">20 минут</h5>
+      
+    </div>
+    <div class="card-footer">
+      <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Выбрать</label>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/kisspng.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">30 минут</h5>
+      
+    </div>
+    <div class="card-footer">
+      <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Выбрать</label>
+</div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-success">Выбрать</button>
       </div>
     </div>
   </div>
