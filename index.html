@@ -174,13 +174,13 @@
 
 </div>
 </div>
-   <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -9em;">
-  <button type="button" class="btn float-left" id="open-room"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;"></button>
+   <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -3em;">
+  <button type="button" class="btn float-left" id="open-room"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;display: none;"></button>
   <h5 class="align-items-center p-2 bd-highlight" style="position:relative; z-index:10; color:#808182;">Осталось: <a href="#"><span class="badge badge-success"> 10:00 мин.</span></a> </h5>
        </div>
 <section class="make-center">
    
-    <br><br>
+
    <!-- <button id="btn-leave-room">Leave /or close the room</button>-->
 
    <!-- <div id="room-urls" style="text-align: center;display: none;background: #F1EDED;margin: 15px -10px;border: 1px solid rgb(189, 189, 189);border-left: 0;border-right: 0;"></div>-->
@@ -220,26 +220,41 @@ video:nth-child(2) {
     box-shadow: 5px 18px 97px -30px #010101;
 }</style>
   </section>
-<div class="text-center" style="position: relative; margin-top: -5em; margin-bottom:5em;">
+<div class="text-center" style="position: relative; margin-top: -10em; margin-bottom:2em;">
+<div class="btn-group-vertical">
+ <input type="text" class="text-center bg-transparent text-white" id="room-id" value="vidim" style="border:0;" disabled>
+<button type="button" class="btn btn-success btn-lg active" id="join-room" >Начать поиск</button>
+</div>
+
 <!--
     <input type="button" class="btn btn-success btn-lg active" id="join-room" value="Начать поиск"/>
     <input type="text" id="room-id" value="vidim">-->
    <!-- <button id="open-room">Open Room</button>-->
     <!--<button id="join-room">Join</button>-->
     <!--<button id="open-or-join-room">Auto</button>-->
-<div class="btn-group btn-group-sm" role="group">
-  <button type="button" class="btn btn-success btn-lg active" id="join-room">Начать поиск</button>
+<div class="btn-group btn-group-sm" role="group" style="width:100%; padding-left:10%; padding-right:10%; padding-bottom:1em; padding-top:1em; background-color:rgba(0,0,0,0.09);">
   
-  <input type="text" id="room-id" value="vidim">
+ <!-- 
+ 
   <button class="btn btn-secondary" id="open-or-join-room">Auto</button>
   <button class="btn btn-secondary" id="btn-leave-room">Закрыть</button>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapseHistori" aria-expanded="false" aria-controls="collapseHistori">История</button>
+  
   <div class="btn-group-toggle" data-toggle="buttons">
   <label class="btn btn-secondary active">
     <input type="checkbox" checked autocomplete="off"> Добавить в друзья
   </label>
 </div>
-<button class="btn btn-warning text-white" data-toggle="modal" data-target="#presentModalCenter">Подарок</button>
+
+-->
+<nav class="navbar navbar-light mx-auto">
+<a class="navbar-brand text-white" id="open-or-join-room" href="#">Авто</a>
+<a class="navbar-brand text-white" id="btn-leave-room" href="#">Добавить в друзья</a>
+<a class="navbar-brand text-white" href="#">Закрыть сесию</a>
+  <!--<button class="btn btn-secondary" id="open-or-join-room">Auto</button>-->
+<!-- <button class="navbar-brand" id="btn-leave-room">Закрыть сесию</button>--> 
+ 
+ <button class="btn btn-outline-warning text-white" data-toggle="modal" data-target="#presentModalCenter">Подарок</button>  
+</nav>
 </div>
  
     
