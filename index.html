@@ -231,8 +231,8 @@
   <h4 class="text-center" style="">Ваше имя: <span class="" style=""> Изменить </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Юнитов: <span class="badge badge-danger"> 0 </span></h4>
   <div id="registracij-wumen" style="margin-bottom:1em;">
   <nav class="nav nav-pills nav-justified" style="margin-bottom:1em;">
-  <a class="btn btn-secondary active" href="#">Личные данные</a>
-  <a class="btn btn-secondary" href="#">Much longer nav link</a>
+  <a class="btn btn-secondary active" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
+  <a class="btn btn-secondary" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" aria-controls="nav-finance">Финансы <span class="badge  badge-info"  data-toggle="tooltip" title=" Юнитов на вашем счету"> 305</span></a>
   <a class="btn btn-secondary" href="#">Link</a>
   <a class="btn btn-secondary" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 </nav>
@@ -290,6 +290,15 @@
   <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
   <label class="custom-control-label" for="customRadio2">Не показывать сомнительный контент</label>
 </div>
+<div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary  btn-sm btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Выберите страну для удоления из списка
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Украина</a>
+      <a class="dropdown-item" href="#">Россия</a>
+    </div>
+  </div>
     </div>
     <div class="card-footer">
      <button type="button" class="btn btn-secondary btn-sm btn-block">Сохронить</button>
@@ -299,6 +308,34 @@
 </div>
   </div>
   </div>
+  
+  <div class="tab-pane" id="nav-finance" role="tabpanel" aria-labelledby="nav-finance-tab"><!--финансы-->
+  <div id="registracij-wumen" style="margin-bottom:1em;">
+  <nav class="nav nav-pills nav-fill" style="margin-bottom:1em;">
+  <a class="btn btn-secondary" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
+  <a class="btn btn-secondary" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" aria-controls="nav-finance">Финансы <span class="badge  badge-info"  data-toggle="tooltip" title=" Юнитов на вашем счету"> 305</span></a>
+  <a class="btn btn-secondary" href="#">Link</a>
+  <a class="btn btn-secondary" href="#" tabindex="-1" aria-disabled="true">Disabled</a> 
+</nav>
+<h5 class="text-white float-right" style="margin-top: -2.5em;"> На счету: 305 unit</h5>
+<form>
+  
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Вывести на карту:</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Visa</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  
+ 
+</form>
+  </div>
+  </div>
+  
   
   </div>
   
