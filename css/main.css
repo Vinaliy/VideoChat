@@ -152,6 +152,16 @@
 	background-position:center;
 	background-repeat:no-repeat;
 }
+#videoChat-wumen {
+	overflow:hidden;
+	width: 100%;
+	display:block;
+	height: 480px; background-color: #00000091;
+	padding: 1em;
+	background-image:url(img/group.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	}
 #some_div_id{
 	overflow:hidden;
 	width: 100%;
