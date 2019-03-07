@@ -228,13 +228,15 @@
   </div></div>
  <!-- ЖЕНЬЩИНЫ---------------------------------------------->
   <div class="tab-pane fade" id="nav-wumen" role="tabpanel" aria-labelledby="nav-wumen-tab">
-  <h4 class="text-center" style="">Ваше имя: <span class="" style=""> Изменить </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Юнитов: <span class="badge badge-danger"> 0 </span></h4>
+  <h4 class="text-center" style="">Ваше имя: <span class="" style=""> Изменить </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Юнитов: <span class="badge badge-danger"> 305 </span></h4>
   <div id="registracij-wumen" style="margin-bottom:1em;">
-  <nav class="nav nav-pills nav-justified" style="margin-bottom:1em;">
-  <a class="btn btn-secondary active" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
+  <nav class="nav nav-pills nav-fill" style="margin-bottom:1em;">
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <a class="btn btn-secondary" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
   <a class="btn btn-secondary" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" aria-controls="nav-finance">Финансы <span class="badge  badge-info"  data-toggle="tooltip" title=" Юнитов на вашем счету"> 305</span></a>
-  <a class="btn btn-secondary" href="#">Link</a>
-  <a class="btn btn-secondary" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  <a class="btn btn-secondary" href="#">ТОП</a>
+  <a class="btn btn-danger" href="#">ВидеоЧат</a>
+  </div> 
 </nav>
 <div class="card-deck">
   <div class="card" style="background-color:hsla(0, 0%, 100%, 0.62);">
@@ -312,27 +314,68 @@
   <div class="tab-pane" id="nav-finance" role="tabpanel" aria-labelledby="nav-finance-tab"><!--финансы-->
   <div id="registracij-wumen" style="margin-bottom:1em;">
   <nav class="nav nav-pills nav-fill" style="margin-bottom:1em;">
+  <div class="btn-group" role="group" aria-label="Basic example">
   <a class="btn btn-secondary" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
   <a class="btn btn-secondary" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" aria-controls="nav-finance">Финансы <span class="badge  badge-info"  data-toggle="tooltip" title=" Юнитов на вашем счету"> 305</span></a>
-  <a class="btn btn-secondary" href="#">Link</a>
-  <a class="btn btn-secondary" href="#" tabindex="-1" aria-disabled="true">Disabled</a> 
+  <a class="btn btn-secondary" href="#">ТОП</a>
+  <a class="btn btn-danger" href="#">ВидеоЧат</a>
+  </div> 
 </nav>
-<h5 class="text-white float-right" style="margin-top: -2.5em;"> На счету: 305 unit</h5>
-<form>
+<h5 class="text-white float-right" style="margin-top: -2.5em;"> У вас: 305 unit. <span style="font-size: 1rem; color: #f5dce9;"> тариф </span><span class="badge badge-info" style=" color: #f5dce9;"> 3\9 </span></h5>
+<div class="row">
+  <div class="col">
+<div class="input-group mb-3" style=" margin-top: 2em;">
+  <div class="input-group-prepend">
+    <button type="button" class="btn btn-outline-warning">Вывести на:</button>
+    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Карту <img src="img/payment_visa.png" height="30" alt="visa" title="visa"></a>
+      <a class="dropdown-item" href="#">Карту <img src="img/payment_master.png" height="30" alt="master" title="master"></a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Приват 24</a>
+    </div>
+  </div>
+  <input type="text" class="form-control"  placeholder="выберите карту" aria-label="выберите карту">
+</div>
+<div class="input-group mb-3" style="width: 350px; margin-top: 2em;">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon11"><img src="img/Users-Checked-User-icon.png" height="25" alt="master" title="master"></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Ф.И.О. владельца" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3" style="margin-top: 2em;">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon12">№ карты:</span>
+  </div>
+  <input type="text" class="form-control" placeholder="ХХХХ-ХХХХ-ХХХХ-ХХХХ" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-top: 2em;">
+  Для вывода средств необходимо <strong>мин. 5000 unit.</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
   
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Вывести на карту:</label>
-    <select class="form-control" id="exampleFormControlSelect1">
-      <option>Visa</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+</div>
+<div class="input-group mb-3" style="margin-top: 2em;">
+<button type="button" class="btn btn-danger btn-block">Вывести</button></div>
+  </div>
+  <div class="col">
+  <div class="alert alert-light" role="alert">
+  Зарабатывайте unit общаясь в видеочате.
+</div>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Сообщение от администрации!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<button type="button" class="btn btn-secondary text-center">Чат с администрацией</button>
   </div>
   
- 
-</form>
+  </div>
+  
   </div>
   </div>
   
