@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Видео чат рулетка |Сайт знакомств онлайн | Знакомства в интернете </title>
+  <meta name="description" content="Видео чат рулетка">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="apple-touch-icon" href="img/icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icon.png">
+  <script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.js"></script>
+  <script src="https://cdn.webrtc-experiment.com/FileBufferReader.js"></script>
+<!-- socket.io for signaling -->
+  <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+  <script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
+
+</head>
+
+
+<body>
+<!--------------------------------------- HEADER ________________------------->
+<header id="head">
+<!--------------------------------------- ВКЛАДКИ _------------------------>
+
+
+
+  <!--------------------------------------- НАВИГАЦИЯ 2 ВКЛАДКИ _МОБИЛНОЕ--------------->
+<nav class="navbar navbar-expand-lg navbar-light " id="#">
+  <a class="navbar-brand"  id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+
+    <span class="logo_text" style=""><img src="img/logo1.png" alt=""/>Lovemeet</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="float:right;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+
+<li class="nav-item dropdown">
+    <a class="nav-link navbar-brand dropdown-toggle bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/Russia-flag.png" height="30" alt="Чат" title="Чат \ Сообщения"></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#"><img src="img/Russia-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="#"><img src="img/Ukraine-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="#"><img src="img/Turkey-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+  </li>
+
+</ul>
+  </div>
+</nav>
+   <!--------- НАВИГАЦИЯ 2 ВКЛАДКИ _МОБИЛНОЕ-----КОНЕЦ---------->
+
+
+
+
+
+
+ <div class="container-fluid">
+ 
+ 
+ <div class="row" style=" padding-top:1em;">
+   <div class="col-sm-8">
+
+    <div style="width:100%;">
+
+    <!---------------------------------------МУЖЧИНЫ------------>
+
+  <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;"> гость345 </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Статус: <span class="badge badge-danger"> Премиум </span></h4>
+    
+
+
+   <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -3em;">
+  <button type="button" class="btn float-left" id="open-room"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;display: none;"></button>
+  <h5 class="align-items-center p-2 bd-highlight" style="position:relative; z-index:10; color:#808182;">Осталось: <a href="#"><span class="badge badge-success"> 10:00 мин.</span></a> </h5>
+       </div>
+<section class="make-center">
+   
+
+<div id="some_div_id"></div>
+
+    <!--<div id="chat-container">
+        <div id="file-container"></div>
+        <div class="chat-output"></div>
+    </div>
+    <div id="videos-container"></div>-->
+  <style>
+/*<!--video {
+    object-fit: fill;
+}-->*/
+</style>
+  </section>
+<div class="text-center" style="position: relative; margin-top: -10em; margin-bottom:2em;">
+<div class="btn-group-vertical">
+ <input type="text" class="text-center bg-transparent text-white" id="room-id" value="vidim" style="border:0;" disabled>
+<button type="button" class="btn btn-success btn-lg active" id="join-room" >Начать поиск</button>
+</div>
+
+<div class="btn-group btn-group-sm" role="group" style="width:100%; padding-top:1em;">
+
+<nav class="navbar navbar-light mx-auto" style=" background-color:rgba(0,0,0,0.09);">
+<a class="navbar-brand text-white" id="open-or-join-room" href="#" style="font-size: 1rem;">Авто</a>
+<a class="navbar-brand text-white" id="btn-leave-room" href="#" style="font-size: 1rem;">Добавить в друзья <span class="badge badge-warning">4</span></a>
+<a class="navbar-brand text-white" href="#" style="font-size: 1rem;">Закрыть сесию</a>
+ 
+<a class="navbar-brand text-white" data-toggle="collapse" href="#collapseHistori" style="font-size: 1rem;"> История</a>  
+ <button class="btn btn-outline-warning text-white" data-toggle="modal" data-target="#presentModalCenter" style="font-size: 1rem;">Подарок</button>
+  
+</nav>
+</div>
+ 
+    
+  </div>
+
+  <div>
+  </div>
+
+
+  
+  
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="input-text-chat">Чат</span>
+  </div>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="share-file">File</button>
+  </div>
+</div>
+
+    
+    
+    <script>
+// ......................................................
+// .......................UI Code........................
+// ......................................................
+document.getElementById('open-room').onclick = function() {
+    this.disabled = true;
+    connection.open(document.getElementById('room-id').value);
+};
+document.getElementById('join-room').onclick = function() {
+    this.disabled = true;
+    connection.join(document.getElementById('room-id').value);
+};
+document.getElementById('open-or-join-room').onclick = function() {
+    this.disabled = true;
+    connection.openOrJoin(document.getElementById('room-id').value);
+};
+document.getElementById('btn-leave-room').onclick = function() {
+    this.disabled = true;
+
+    if (connection.isInitiator) {
+        // use this method if you did NOT set "autoCloseEntireSession===true"
+        // for more info: https://github.com/muaz-khan/RTCMultiConnection#closeentiresession
+        connection.closeEntireSession(function() {
+            document.querySelector('h1').innerHTML = 'Entire session has been closed.';
+        });
+    } else {
+        connection.leave();
+    }
+};
+// ......................................................
+// ................FileSharing/TextChat Code.............
+// ......................................................
+document.getElementById('share-file').onclick = function() {
+    var fileSelector = new FileSelector();
+    fileSelector.selectSingleFile(function(file) {
+        connection.send(file);
+    });
+};
+document.getElementById('input-text-chat').onkeyup = function(e) {
+    if(e.keyCode != 13) return;
+    
+    // removing trailing/leading whitespace
+    this.value = this.value.replace(/^\s+|\s+$/g, '');
+    if (!this.value.length) return;
+    
+    connection.send(this.value);
+    appendDIV(this.value);
+    this.value =  '';
+};
+var chatContainer = document.querySelector('.chat-output');
+function appendDIV(event) {
+    var div = document.createElement('div');
+    div.innerHTML = event.data || event;
+    chatContainer.insertBefore(div, chatContainer.firstChild);
+    div.tabIndex = 0; div.focus();
+    
+    document.getElementById('input-text-chat').focus();
+}
+// ......................................................
+// ..................RTCMultiConnection Code.............
+// ......................................................
+var connection = new RTCMultiConnection();
+connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
+connection.enableFileSharing = true; // by default, it is "false".
+connection.session = {
+    audio: true,
+    video: true,
+    data : true
+};
+connection.sdpConstraints.mandatory = {
+    OfferToReceiveAudio: true,
+    OfferToReceiveVideo: true
+};
+connection.onstream = function(event) {
+    var container = document.getElementById('some_div_id');
+    container.appendChild(event.mediaElement);
+};
+connection.onmessage = appendDIV;
+connection.filesContainer = document.getElementById('file-container');
+connection.onopen = function() {
+    document.getElementById('share-file').disabled      = false;
+    document.getElementById('input-text-chat').disabled = false;
+};
+</script>
+
+</div>
+
+
+
+
+<div class="card-deck collapse" id="collapseHistori" style="padding-bottom:1em;">
+  <div class="card">
+    <img src="img/women-histori-1.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-success">on</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">3 мин. назад <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-2.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-danger">of</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">1 мин. назад <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-3.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-success">on</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">Вчера <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-4.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-danger">of</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">03.02.2019 <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="col">
+<div class="container-fluid flex-column"><ul class="nav nav-tabs list-unstyled" id="myTab_chat" role="tablist">
+<li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle navbar-brand bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/filled-chat.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+
+ <div class="dropdown-menu">
+
+  <a class="dropdown-item" id="myChat-tab" data-toggle="tab" href="#myChat" role="tab" aria-controls="myChat" aria-selected="false"><img src="img/filled-chat.png" height="30"> Чат</a>
+<a class="dropdown-item" id="profile-tab" data-toggle="tab" href="#myMessages" role="tab" aria-controls="myMessages" aria-selected="false"><img src="img/1.png" height="30"> Сообщения</a>
+  </div>
+  </li>
+  <li class="nav-item">
+ <a class="nav-link navbar-brand bg-transparent" id="profile-tab" data-toggle="tab" href="#myFriends" role="tab" aria-controls="myFriends-tab"><img src="img/user.png" height="50" alt="Друзья"></a>
+
+  </li>
+
+  <li class="nav-item">
+    <!--<a class="nav-link navbar-brand" id="pills-settings-tab" data-toggle="tab" href="#pills-settings" role="tab" aria-controls="profile" aria-selected="false"><img src="img/administrative.png" height="50" alt="Чат"></a>-->
+    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Стать премиум</button>
+  </li>
+
+</ul></div>
+
+<div class="tab-content overflow-auto align-items-stretch" id="myTabContent" style="height:500px;">
+
+  <div class="tab-pane fade show active chat_tab_style" id="myChat" role="tabpanel" aria-labelledby="myChat-tab">
+<ul class="list-unstyled">
+  <li class="media bg-light" style="padding:0.5em;">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Маша</h5>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+    </div>
+        <img src="img/devushki1.png" class="mr-3" style="height:54px;" alt="...">
+  </li>
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/vi.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Вы</h5>
+      Cras sit amet nibh libero, in gravida nulla.
+    </div>
+  </li>
+  <li class="media bg-light" style="padding:0.5em;">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Наташа</h5>
+      Cras sit amet nibh libero, vestibulum in vulputate at, tempus viverra turpis.
+     </div>
+        <img src="img/devushki2.png" class="mr-3" style="height:54px;" alt="...">
+  </li>
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/video-chat-clipart.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Вы</h5>
+      Cras sit amet nibh libero, in gravida nulla.
+    </div>
+  </li>
+</ul>
+  </div>
+  <div class="tab-pane fade chat_tab_style" id="myMessages" role="tabpanel" aria-labelledby="myMessages-tab">
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Анюта</strong>
+    <small class="text-muted">2 часа назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Привет!
+  </div>
+</div>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Наташа</strong>
+    <small class="text-muted">2 секунды назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Как дела? Напиши мне.
+  </div>
+</div>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Анюта</strong>
+    <small class="text-muted">2 часа назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Привет!
+  </div>
+</div>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Наташа</strong>
+    <small class="text-muted">2 секунды назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Как дела? Напиши мне.
+  </div>
+</div>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Анюта</strong>
+    <small class="text-muted">2 часа назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Привет!
+  </div>
+</div>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Наташа</strong>
+    <small class="text-muted">2 секунды назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Как дела? Напиши мне.
+  </div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="myFriends" role="tabpanel" aria-labelledby="myFriends-tab">
+<ul class="list-unstyled">
+
+  <li class="media my-4 list-group-item-primary rounded-pill">
+
+        <img src="img/devushki2.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Маша</h5><!-- Button trigger modal -->
+      Одесса. 18 лет
+    </div>
+    <!-- Button trigger modal -->
+   <a class="#" href="#" role="button" data-toggle="modal" data-target="#frends_onlaynleModalCenter"><img src="img/14.png" class="ml-3" style="height:54px;" alt="Начать чат"></a>
+  </li>
+
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/devushki1.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Саша</h5>
+      Одесса. 18 лет
+    </div>
+    <img src="img/14_dis.png" class="ml-3" style="height:54px;" alt="...">
+  </li>
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/devushki2.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Маша</h5>
+      Одесса. 18 лет
+    </div>
+    <img src="img/14.png" class="ml-3" style="height:54px;" alt="...">
+  </li>
+
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/devushki1.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Саша</h5>
+      Одесса. 18 лет
+    </div>
+    <img src="img/14_dis.png" class="ml-3" style="height:54px;" alt="...">
+  </li>
+</ul>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+  </div>
+
+  
+</header>
+
+
+
+   
+
+
+
+
+<!--<script src="js/html5.webcam.demo.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'DYd5eJ4xBQ';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+</body>
+</html>
