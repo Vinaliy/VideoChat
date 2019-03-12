@@ -1,0 +1,1428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Видео чат рулетка |Сайт знакомств онлайн | Знакомства в интернете </title>
+  <meta name="description" content="Видео чат рулетка">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="apple-touch-icon" href="img/icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icon.png">
+  <script src="https://rtcmulticonnection.herokuapp.com/dist/RTCMultiConnection.js"></script>
+  <script src="https://cdn.webrtc-experiment.com/FileBufferReader.js"></script>
+<!-- socket.io for signaling -->
+  <script src="https://rtcmulticonnection.herokuapp.com/socket.io/socket.io.js"></script>
+  <script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+  </script>
+
+</head>
+
+
+<body>
+<!--------------------------------------- HEADER ________________------------->
+<header id="head">
+<!--------------------------------------- ВКЛАДКИ _------------------------>
+
+<div class="tab-content gradient" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><!----ПЕРВАЯ ВКЛАДКА--->
+<!--------------------------------------- СЛАЙДЕР _------------------------>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <!--------------------------------------- НАВИГАЦИЯ 1 ВКЛАДКИ _------------------------>
+ 
+  <!--------------------------------------- НАВИГАЦИЯ 1 ВКЛАДКИ ДЕСКТОП _КОНЕЦ------------------->
+
+  <!--------------------------------------- НАВИГАЦИЯ 1 ВКЛАДКИ _МОБИЛНОЕ--------------->
+<nav class="navbar navbar-expand-lg navbar-light" id="#">
+  <a class="navbar-brand" href="index3.html">
+
+    <span class="logo_text" style=""><img src="img/logo1.png" alt=""/>Lovemeet</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="float:right;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+<li class="nav-item dropdown">
+    <a class="nav-link navbar-brand dropdown-toggle bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/Russia-flag.png" height="30" alt="Чат" title="Чат \ Сообщения"></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#"><img src="img/Russia-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="#"><img src="img/Ukraine-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="index3.html"><img src="img/Turkey-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+  </li>
+<li class="nav-item">
+   <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="modal" data-placement="top" title="зарегистрироваться \ войти"  href="#registerleModal" aria-controls="pills-profile" aria-selected="false"><!--<img src="img/Users-Checked-User-icon.png" height="30" alt="Чат" title="Чат \ Сообщения">--> Войти</a></li>
+</ul>
+  </div>
+</nav>
+   <!--------- НАВИГАЦИЯ 1 ВКЛАДКИ _МОБИЛНОЕ-----КОНЕЦ---------->
+
+ <!--------------------ПЕРВЫЙ СЛАЙД ------------------------>
+  <div class="carousel-inner shadow">
+  <!--------------------ПЕРВЫЙ СЛАЙД МОБ,---------------->
+  <div class="slaydr_mob">
+    <img src="img/slayder2.png" class="img-fluid" alt=""/> </div>
+  <!--------------------ПЕРВЫЙ СЛАЙД МОБ,-КОНЕЦ------->
+    <div class="carousel-item active" data-interval="5000" style="margin-top:-4em;">
+
+        <img src="img/slayder1.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block carousel-box1">
+          <span class="logo_text1 text-center" style=" margin-left:0;">Lovemeet <span style="font-weight:400;">- Видеочат</span></span>
+         <h4 style="color:#ff316a;">с девушками онлайн</h4>
+    <a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-danger btn-lg button_videochat" role="button" aria-pressed="true" style="margin-top:3em;">ПОПРОБУЙ БЕСПЛАТНО</a>
+    <p style=" color:#373737; margin-top: 1em;">БЕЗ РИГИСТРАЦИИ</p>
+  </div>
+      </div>
+    <div class="carousel-item" data-interval="3000" style="margin-top:-4em;">
+
+      <img src="img/slayder_2.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block carousel-box2">
+          <span class="logo_text1 text-center" style=" margin-left:0;">Lovemeet <span style="font-weight:400;">- Видеочат</span></span>
+         <h4 style="color:#ff316a;">с девушками онлайн</h4>
+    <a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-danger btn-lg button_videochat" role="button" aria-pressed="true">ПОПРОБУЙ БЕСПЛАТНО</a>
+    <p style=" color:#373737; margin-top: 1em;">БЕЗ РИГИСТРАЦИИ</p>
+  </div>
+    </div>
+    <!--<div class="carousel-item" data-interval="2000">
+      <img src="img/slayder1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+    <h5>.123</h5>
+    <p>789</p>
+  </div>
+    </div>-->
+  </div>
+ <!--------------------ПЕРВЫЙ СЛАЙД -----КОНЕЦ----------->
+</div>
+</div><!----ПЕРВАЯ ВКЛАДКА--КОНЕЦ---->
+
+<!----ВТОРАЯ ВКЛАДКА--->
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" style="margin-bottom:10em;">
+     <!--------------------------------------- НАВИГАЦИЯ 2 ВКЛАДКИ _------------------------>
+
+  <!--------------------------------------- НАВИГАЦИЯ 2 ВКЛАДКИ ДЕСКТОП _КОНЕЦ------------------->
+
+  <!--------------------------------------- НАВИГАЦИЯ 2 ВКЛАДКИ _МОБИЛНОЕ--------------->
+<nav class="navbar navbar-expand-lg navbar-light " id="#">
+  <a class="navbar-brand"  id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+
+    <span class="logo_text" style=""><img src="img/logo1.png" alt=""/>Lovemeet</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="float:right;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+
+<li class="nav-item dropdown">
+    <a class="nav-link navbar-brand dropdown-toggle bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/Russia-flag.png" height="30" alt="Чат" title="Чат \ Сообщения"></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#"><img src="img/Russia-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="#"><img src="img/Ukraine-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="#"><img src="img/Turkey-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+  </li>
+<li class="nav-item">
+    <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="modal" href="#registerleModal" aria-controls="pills-profile" aria-selected="false"><img src="img/devushki2.png" class="rounded mr-2" style="height:35px;" alt="..."></a>
+  </li>
+</ul>
+  </div>
+</nav>
+   <!--------- НАВИГАЦИЯ 2 ВКЛАДКИ _МОБИЛНОЕ-----КОНЕЦ---------->
+
+
+
+
+
+
+ <div class="container-fluid">
+ 
+ 
+ <div class="row" style=" padding-top:1em;">
+   <div class="col-sm-8">
+
+    <div style="width:100%;">
+    <div class="tab-content" id="nav-tabContent">
+    <!---------------------------------------МУЖЧИНЫ------------>
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel">
+  <h4 class="text-center" style="">Вы зашли как: <span class="badge" style="background-color: #ff316a; color:#fff;"> гость345 </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Статус: <span class="badge badge-danger"> Премиум </span></h4>
+    <div class="alert gradient alert-dismissible fade show container-fluid h-100 d-inline-block" role="alert" style=" position:absolute; z-index:20;margin-top: -2px;border: 0; width:97%;">
+
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <h2 class="text-center">Вам 18+</h2>
+
+  <div class="card-deck  justify-content-center">
+  <div class="card bg-transparent" style="max-width: 15em; border:0;">
+    <img src="img/men.png" class="card-img-top mx-auto d-block" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">вы</h5>
+
+    </div>
+    <div class="card-footer" style="border:0;">
+      <button type="button" class="btn btn-outline-info btn-lg btn-block" data-dismiss="alert">Мужчина</button>
+    </div>
+  </div>
+  <div class="card bg-transparent" style="max-width: 15em; border:0;">
+    <img src="img/women.png" class="card-img-top  mx-auto d-block" alt="...">
+    <div class="card-body">
+      <h5 class="card-title text-center">вы</h5>
+
+    </div>
+    <div class="card-footer" style="border:0;">
+      <button type="button" class="btn btn-outline-warning btn-lg btn-block"  data-toggle="modal" data-target="#registerWumenleModal">Женщина</button>
+     
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+   <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -3em;">
+  <button type="button" class="btn float-left" id="open-room"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;display: none;"></button>
+  <h5 class="align-items-center p-2 bd-highlight" style="position:relative; z-index:10; color:#808182;">Осталось: <a href="#"><span class="badge badge-success"> 10:00 мин.</span></a> </h5>
+       </div>
+<section class="make-center">
+   
+
+<div id="some_div_id"></div>
+
+    <!--<div id="chat-container">
+        <div id="file-container"></div>
+        <div class="chat-output"></div>
+    </div>
+    <div id="videos-container"></div>-->
+  <style>
+/*<!--video {
+    object-fit: fill;
+}-->*/
+</style>
+  </section>
+<div class="text-center" style="position: relative; margin-top: -10em; margin-bottom:2em;">
+<div class="btn-group-vertical">
+ <input type="text" class="text-center bg-transparent text-white" id="room-id" value="vidim" style="border:0;" disabled>
+<button type="button" class="btn btn-success btn-lg active" id="join-room" >Начать поиск</button>
+</div>
+
+<div class="btn-group btn-group-sm" role="group" style="width:100%; padding-top:1em;">
+
+<nav class="navbar navbar-light mx-auto" style=" background-color:rgba(0,0,0,0.09);">
+<a class="navbar-brand text-white" id="open-or-join-room" href="#" style="font-size: 1rem;">Авто</a>
+<a class="navbar-brand text-white" id="btn-leave-room" href="#" style="font-size: 1rem;">Добавить в друзья <span class="badge badge-warning">4</span></a>
+<a class="navbar-brand text-white" href="#" style="font-size: 1rem;">Закрыть сесию</a>
+ 
+<a class="navbar-brand text-white" data-toggle="collapse" href="#collapseHistori" style="font-size: 1rem;"> История</a>  
+ <button class="btn btn-outline-warning text-white" data-toggle="modal" data-target="#presentModalCenter" style="font-size: 1rem;">Подарок</button>
+  
+</nav>
+</div>
+ 
+    
+  </div>
+
+  <div>
+  </div></div>
+ <!-- ЖЕНЬЩИНЫ---------------------------------------------->
+  <div class="tab-pane fade" id="nav-wumen" role="tabpanel" aria-labelledby="nav-wumen-tab">
+  <h4 class="text-center" style="">Ваше имя: <span class="" style=""> Изменить </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Юнитов: <span class="badge badge-danger"> 305 </span></h4>
+  
+  <div id="registracij-wumen" style="margin-bottom:1em;">
+   <nav class="nav nav-pills nav-fill" style="margin-bottom:1em;">
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <a class="btn btn-secondary" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
+  <!--<a class="btn btn-secondary" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" aria-controls="nav-finance">Финансы <span class="badge  badge-info"  data-toggle="tooltip" title=" Юнитов на вашем счету"> 305</span></a>-->
+  <a class="btn btn-secondary" href="#navTOP" id="navTOP-tab" data-toggle="tab"  role="tab">ТОП</a>
+  <a class="btn btn-danger" href="#videoChat2" id="videoChat2-tab" data-toggle="tab"  role="tab">ВидеоЧат</a>
+  </div> 
+</nav>
+<h5 class="text-white float-right" style="margin-top: -2.5em;"><a class="navbar-brand text-white" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" title="Зарабатывайте unit общаясь в видеочате." aria-controls="nav-finance"><span> У вас: 305 unit.</span></a> <a class="navbar-brand" href="#tarif" id="tarif-tab" data-toggle="tab" role="tab" aria-controls="tarif" title="Расчет unit за первую и последующую минуту разговора."><span style="font-size: 1rem; color: #f5dce9;"> тариф </span><span class="badge badge-info" style=" color: #f5dce9;"> 3\9 </span></a></h5>
+<div class="card-deck">
+  <div class="card" style="background-color:hsla(0, 0%, 100%, 0.62);">
+    <img src="img/camera.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay">
+    <h5 class="card-title">Ваше фото:</h5>
+    
+    
+  </div>
+    <div class="card-body" style="padding:0;">
+      
+      <nav class="navbar">
+  <a class="navbar-brand" href="#">
+    <img src="img/camera2.png" height="50" alt="">
+  </a>
+  <a class="navbar-brand" href="#">
+    <img src="img/add.png" height="50" alt="">
+  </a>
+</nav>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Ссылка на ваш профиль: loveismeet.com/id3584596</small>
+    </div>
+  </div>
+  <div class="card" style="background-color:hsla(0, 0%, 100%, 0.62);">
+
+    <div class="card-body">
+      <div class="input-group input-group-sm mb-3">
+      <select class="custom-select custom-select-sm mb-3" style="width:100%;">
+  <option selected>Ваш возрост:+18</option>
+  <option value="1">от 18 до 22 лет</option>
+  <option value="2">от 22 до 30 лет</option>
+  <option value="3">от 30 до 40 лет</option>
+</select>
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  placeholder="новй пароль">
+</div>
+
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">@</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"  placeholder="подтвердить пароль">
+</div>
+  
+  <div class="custom-control custom-radio">
+  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio1">Показывать весь контент</label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+  <label class="custom-control-label" for="customRadio2">Не показывать сомнительный контент</label>
+</div>
+<div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-secondary  btn-sm btn-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Выберите страну для удоления из списка
+    </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#">Украина</a>
+      <a class="dropdown-item" href="#">Россия</a>
+    </div>
+  </div>
+    </div>
+    <div class="card-footer">
+     <button type="button" class="btn btn-secondary btn-sm btn-block">Сохронить</button>
+    </div>
+  </div>
+ 
+</div>
+  </div>
+  </div>
+  
+  <div class="tab-pane" id="nav-finance" role="tabpanel" aria-labelledby="nav-finance-tab"><!--финансы-->
+  <h4 class="text-center" style="">Ваше имя: <span class="" style=""> Изменить </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Юнитов: <span class="badge badge-danger"> 305 </span></h4>
+  <div id="registracij-wumen" style="margin-bottom:1em;">
+  <nav class="nav nav-pills nav-fill" style="margin-bottom:1em;">
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <a class="btn btn-secondary" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
+  <!--<a class="btn btn-secondary" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" aria-controls="nav-finance">Финансы <span class="badge  badge-info"  data-toggle="tooltip" title=" Юнитов на вашем счету"> 305</span></a>-->
+  <a class="btn btn-secondary" href="#navTOP" id="navTOP-tab" data-toggle="tab"  role="tab">ТОП</a>
+  <a class="btn btn-danger" href="#videoChat2" id="videoChat2-tab" data-toggle="tab"  role="tab">ВидеоЧат</a>
+  </div> 
+</nav>
+<h5 class="text-white float-right" style="margin-top: -2.5em;"><a class="navbar-brand text-white" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" title="Зарабатывайте unit общаясь в видеочате." aria-controls="nav-finance"><span> У вас: 305 unit.</span></a> <a class="navbar-brand" href="#tarif" id="tarif-tab" data-toggle="tab" role="tab" aria-controls="tarif" title="Расчет unit за первую и последующую минуту разговора."><span style="font-size: 1rem; color: #f5dce9;"> тариф </span><span class="badge badge-info" style=" color: #f5dce9;"> 3\9 </span></a></h5>
+<div class="row">
+  <div class="col" style="background-color:#838686;">
+  <p class="text-center">Вывод средств на карту: </p>
+<div class="input-group mb-3" style=" margin-top: 1em;">
+
+  <div class="input-group-prepend">
+    <button type="button" class="btn btn-outline-warning">Вывести на:</button>
+    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Карту <img src="img/payment_visa.png" height="30" alt="visa" title="visa"></a>
+      <a class="dropdown-item" href="#">Карту <img src="img/payment_master.png" height="30" alt="master" title="master"></a>
+      <div role="separator" class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Приват 24</a>
+    </div>
+  </div>
+  <input type="text" class="form-control"  placeholder="выберите карту" aria-label="выберите карту">
+</div>
+<div class="input-group mb-3" style="margin-top: 2em;">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon11"><img src="img/Users-Checked-User-icon.png" height="25" alt="master" title="master"></span>
+  </div>
+  <input type="text" class="form-control" placeholder="Ф.И.О. владельца" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="input-group mb-3" style="margin-top: 2em;">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon12">№ карты:</span>
+  </div>
+  <input type="text" class="form-control" placeholder="ХХХХ-ХХХХ-ХХХХ-ХХХХ" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert" style="margin-top: 2em;">
+  Для вывода средств необходимо <strong>мин. 5000 unit.</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  
+</div>
+<div class="input-group mb-3" style="margin-top: 2em;">
+<button type="button" class="btn btn-danger btn-block">Вывести</button></div>
+  </div>
+  <div class="col">
+  <div class="alert alert-light" role="alert">
+  Зарабатывайте unit общаясь в видеочате.
+</div>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Сообщение от администрации!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<button type="button" class="btn btn-secondary text-center">Чат с администрацией</button>
+  </div>
+  
+  </div>
+  
+  </div>
+  </div>
+  <div class="tab-pane" id="navTOP" role="tabpanel" aria-labelledby="navTOP-tab"><!--  TOP-->
+  <div id="registracij-wumen" style="margin-bottom:1em;">
+ <nav class="nav nav-pills nav-fill" style="margin-bottom:1em;">
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <a class="btn btn-secondary" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
+  <!--<a class="btn btn-secondary" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" aria-controls="nav-finance">Финансы <span class="badge  badge-info"  data-toggle="tooltip" title=" Юнитов на вашем счету"> 305</span></a>-->
+  <a class="btn btn-secondary" href="#navTOP" id="navTOP-tab" data-toggle="tab"  role="tab">ТОП</a>
+  <a class="btn btn-danger" href="#videoChat2" id="videoChat2-tab" data-toggle="tab"  role="tab">ВидеоЧат</a>
+  </div> 
+</nav>
+
+  </div>
+  
+  </div>
+  <div class="tab-pane" id="tarif" role="tabpanel" aria-labelledby="tarif-tab"><!-- Тарифы-->
+  <h4 class="text-center" style="">Ваше имя: <span class="" style=""> Изменить </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Юнитов: <span class="badge badge-danger"> 305 </span></h4>
+  <div id="registracij-wumen" style="margin-bottom:1em;">
+  <nav class="nav nav-pills nav-fill" style="margin-bottom:1em;">
+  <div class="btn-group" role="group" aria-label="Basic example">
+  <a class="btn btn-secondary" href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance">Личные данные</a>
+  
+  <a class="btn btn-secondary" href="#navTOP" id="navTOP-tab" data-toggle="tab"  role="tab">ТОП</a>
+  <a class="btn btn-danger" href="#videoChat2" id="videoChat2-tab" data-toggle="tab"  role="tab">ВидеоЧат</a>
+  </div> 
+</nav>
+<h5 class="text-white float-right" style="margin-top: -2.5em;"><a class="navbar-brand text-white" href="#nav-finance" id="nav-finance-tab" data-toggle="tab" role="tab" title="Зарабатывайте unit общаясь в видеочате." aria-controls="nav-finance"><span> У вас: 305 unit.</span></a> <a class="navbar-brand" href="#tarif" id="tarif-tab" data-toggle="tab" role="tab" aria-controls="tarif" title="Расчет unit за первую и последующую минуту разговора."><span style="font-size: 1rem; color: #f5dce9;"> тариф </span><span class="badge badge-info" style=" color: #f5dce9;"> 3\9 </span></a></h5>
+  <div class="container">
+  <div class="row">
+    <div class="col-5" style="background-color:#9D95A6;">
+      <ul class="list-group list-group-flush">
+  <a href="#" class="list-group-item list-group-item-action nav-link  bg-transparent"><li class="list-group-item bg-transparent">
+  <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Тариф 7/14</h5>
+      <small>1188 мин.</small>
+      </div>
+    <p class="mb-1">Требуется минут: - 1188.</p>
+  </li></a>
+  <a href="#" class="list-group-item list-group-item-action nav-link  bg-transparent"><li class="list-group-item bg-transparent">
+  <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Тариф 5/12</h5>
+      <small>810 мин.</small>
+      </div>
+    <p class="mb-1">Требуется минут: - 810</p>
+  </li></a>
+  <a href="#" class="list-group-item list-group-item-action nav-link  bg-transparent"><li class="list-group-item bg-transparent">
+  <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Тариф 4/10</h5>
+      <small>369 мин.</small>
+      </div>
+    <p class="mb-1">Требуется минут: - 369</p>
+  </li></a>
+  <a href="#" class="list-group-item list-group-item-action nav-link  bg-transparent"><li class="list-group-item" style="background-color:#ab9876;">
+  <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Тариф 3/9</h5>
+      <small style="color:#fff;">Ваш тариф</small>
+      </div>
+   
+  </li></a>
+</ul>
+    </div>
+    <div class="col-4" style="color:#ccc; background-color:#8a7a82; padding:1em;">
+      <h5 class="mb-1">История общения:</h5>
+      <div class="row" style="padding:0.5em; margin-bottom:1em;">
+      <div class="col-4" style="background-color:#7a5d74;">
+      <small>Вс,</small>
+      </div>
+      <div class="col-8" style="background-color:#bca1a9; color:#000;">
+      <small>не работала</small>
+      </div>
+      <div class="col-4" style="background-color:#847581;">
+      <small>Пн,</small>
+      </div>
+      <div class="col-8" style="background-color:#c2b0b5; color:#000;">
+      <small>не работала</small>
+      </div>
+      <div class="col-4" style="background-color:#7a5d74;">
+      <small>Вт,</small>
+      </div>
+      <div class="col-8" style="background-color:#bca1a9; color:#000;">
+      <small>не работала</small>
+      </div>
+      <div class="col-4" style="background-color:#847581;">
+      <small>Ср,</small>
+      </div>
+      <div class="col-8" style="background-color:#c2b0b5; color:#000;">
+      <small>не работала</small>
+      </div>
+      <div class="col-4" style="background-color:#7a5d74;">
+      <small>Чт,</small>
+      </div>
+      <div class="col-8" style="background-color:#bca1a9; color:#000;">
+      <small>не работала</small>
+      </div>
+      <div class="col-4" style="background-color:#847581;">
+      <small>Пт,</small>
+      </div>
+      <div class="col-8" style="background-color:#c2b0b5; color:#000;">
+      <small>не работала</small>
+      </div>
+      <div class="col-4" style="background-color:#7a5d74;">
+      <small>Сб,</small>
+      </div>
+      <div class="col-8" style="background-color:#bca1a9; color:#000;">
+      <small>не работала</small>
+      </div>
+     </div>
+     <h5 class="mb-1">Итого: </h5>
+      <p>- 0 мин. за 7 дней <strong>  (?)</strong></p>
+      <p>- Выходных дней доступно: 0<strong>  (?)</strong></p>
+    </div>
+    
+    <div class="col-3" style="color:#ccc; background-color:#8a7a92; padding:1em;">
+      <h5 class="mb-1">Текущий тариф:-3/9</h5>
+      <p>- Первая минута: <strong> 3 unit</strong></p>
+      <p>- Вторая минута: <strong> 9 unit</strong></p>
+     
+    </div>
+    
+  </div></div>
+  </div>
+  </div>
+  
+  <div class="tab-pane" id="videoChat2" role="tabpanel" aria-labelledby="videoChat2-tab"><!-- ВидеоЧат-->
+  <h4 class="text-center" style="">Ваше имя: <span class="" style=""> Изменить </span><a class="nav-link navbar-brand bg-transparent" id="editing-modal" data-toggle="modal" href="#editing_naemleModal" role="modal" aria-controls="editing-tab"><img src="img/editing.png" height="30" alt="Редактировать"></a> Юнитов: <span class="badge badge-danger"> 305 </span></h4>
+  <div class="d-flex align-items-center align-content-start flex-wrap" style=" margin-bottom: -3em;">
+  <button type="button" class="btn float-left" id="open-room"><img src="img/on_camera.png" class="ml-3" style="height:80px; position: relative; z-index: 10;display: none;"></button>
+  <h5 class="align-items-center p-2 bd-highlight" style="position:relative; z-index:10; color:#808182;"><a  href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab"  role="tab" aria-controls="nav-finance"><span class="badge badge-success"> Личные данные</span></a> </h5>
+       </div>
+  <div id="some_div_id" style="margin-bottom:1em;"></div>
+  
+  <div class="text-center" style="position: relative; margin-top: -10em; margin-bottom:2em;">
+<div class="btn-group-vertical">
+ <input type="text" class="text-center bg-transparent text-white" id="room-id" value="vidim" style="border:0;" disabled>
+<button type="button" class="btn btn-success btn-lg active" id="join-room" >Начать поиск</button>
+</div>
+
+<div class="btn-group btn-group-sm" role="group" style="width:100%; padding-top:1em;">
+
+<nav class="navbar navbar-light mx-auto" style=" background-color:rgba(0,0,0,0.09);">
+<a class="navbar-brand text-white" id="open-or-join-room" href="#" style="font-size: 1rem;">Авто</a>
+<a class="navbar-brand text-white" id="btn-leave-room" href="#" style="font-size: 1rem;">Добавить в друзья <span class="badge badge-warning">4</span></a>
+<a class="navbar-brand text-white" href="#" style="font-size: 1rem;">Закрыть сесию</a>
+ 
+<a class="navbar-brand text-white" data-toggle="collapse" href="#collapseHistori" style="font-size: 1rem;"> История</a>  
+ 
+  
+</nav>
+</div>
+ 
+    
+  </div>
+  
+  </div>
+  
+  </div>
+  
+  
+  <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="input-text-chat">Чат</span>
+  </div>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="share-file">File</button>
+  </div>
+</div>
+
+    
+    
+    <script>
+// ......................................................
+// .......................UI Code........................
+// ......................................................
+document.getElementById('open-room').onclick = function() {
+    this.disabled = true;
+    connection.open(document.getElementById('room-id').value);
+};
+document.getElementById('join-room').onclick = function() {
+    this.disabled = true;
+    connection.join(document.getElementById('room-id').value);
+};
+document.getElementById('open-or-join-room').onclick = function() {
+    this.disabled = true;
+    connection.openOrJoin(document.getElementById('room-id').value);
+};
+document.getElementById('btn-leave-room').onclick = function() {
+    this.disabled = true;
+
+    if (connection.isInitiator) {
+        // use this method if you did NOT set "autoCloseEntireSession===true"
+        // for more info: https://github.com/muaz-khan/RTCMultiConnection#closeentiresession
+        connection.closeEntireSession(function() {
+            document.querySelector('h1').innerHTML = 'Entire session has been closed.';
+        });
+    } else {
+        connection.leave();
+    }
+};
+// ......................................................
+// ................FileSharing/TextChat Code.............
+// ......................................................
+document.getElementById('share-file').onclick = function() {
+    var fileSelector = new FileSelector();
+    fileSelector.selectSingleFile(function(file) {
+        connection.send(file);
+    });
+};
+document.getElementById('input-text-chat').onkeyup = function(e) {
+    if(e.keyCode != 13) return;
+    
+    // removing trailing/leading whitespace
+    this.value = this.value.replace(/^\s+|\s+$/g, '');
+    if (!this.value.length) return;
+    
+    connection.send(this.value);
+    appendDIV(this.value);
+    this.value =  '';
+};
+var chatContainer = document.querySelector('.chat-output');
+function appendDIV(event) {
+    var div = document.createElement('div');
+    div.innerHTML = event.data || event;
+    chatContainer.insertBefore(div, chatContainer.firstChild);
+    div.tabIndex = 0; div.focus();
+    
+    document.getElementById('input-text-chat').focus();
+}
+// ......................................................
+// ..................RTCMultiConnection Code.............
+// ......................................................
+var connection = new RTCMultiConnection();
+connection.socketURL = 'https://rtcmulticonnection.herokuapp.com:443/';
+connection.enableFileSharing = true; // by default, it is "false".
+connection.session = {
+    audio: true,
+    video: true,
+    data : true
+};
+connection.sdpConstraints.mandatory = {
+    OfferToReceiveAudio: true,
+    OfferToReceiveVideo: true
+};
+connection.onstream = function(event) {
+    var container = document.getElementById('some_div_id');
+    container.appendChild(event.mediaElement);
+};
+connection.onmessage = appendDIV;
+connection.filesContainer = document.getElementById('file-container');
+connection.onopen = function() {
+    document.getElementById('share-file').disabled      = false;
+    document.getElementById('input-text-chat').disabled = false;
+};
+</script>
+
+</div>
+<div class="card-deck collapse" id="collapseHistori" style="padding-bottom:1em;">
+  <div class="card">
+    <img src="img/women-histori-1.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-success">on</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">3 мин. назад <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-2.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-danger">of</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">1 мин. назад <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-3.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-success">on</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">Вчера <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/women-histori-4.png" class="card-img-top" alt="...">
+    <div class="card-img-overlay text-white" style="padding: 0.5rem;">
+    <p class="card-text"><span class="badge badge-pill badge-danger">of</span> Маша</p>
+  </div>
+    <div class="card-footer">
+      <small class="text-muted">03.02.2019 <a class="nav-link navbar-brand bg-transparent float-right" href="#" style="margin-top: -0.3em;"> <img src="img/video-ico.png" height="20" alt="Видео чат"></a></small>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="col">
+<div class="container-fluid flex-column"><ul class="nav nav-tabs list-unstyled" id="myTab_chat" role="tablist">
+<li class="nav-item dropdown">
+ <a class="nav-link dropdown-toggle navbar-brand bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/filled-chat.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+
+ <div class="dropdown-menu">
+
+  <a class="dropdown-item" id="myChat-tab" data-toggle="tab" href="#myChat" role="tab" aria-controls="myChat" aria-selected="false"><img src="img/filled-chat.png" height="30"> Чат</a>
+<a class="dropdown-item" id="profile-tab" data-toggle="tab" href="#myMessages" role="tab" aria-controls="myMessages" aria-selected="false"><img src="img/1.png" height="30"> Сообщения</a>
+  </div>
+  </li>
+  <li class="nav-item">
+ <a class="nav-link navbar-brand bg-transparent" id="profile-tab" data-toggle="tab" href="#myFriends" role="tab" aria-controls="myFriends-tab"><img src="img/user.png" height="50" alt="Друзья"></a>
+
+  </li>
+
+  <li class="nav-item">
+    <!--<a class="nav-link navbar-brand" id="pills-settings-tab" data-toggle="tab" href="#pills-settings" role="tab" aria-controls="profile" aria-selected="false"><img src="img/administrative.png" height="50" alt="Чат"></a>-->
+    <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModalCenter">Стать премиум</button>
+  </li>
+
+</ul></div>
+
+<div class="tab-content overflow-auto align-items-stretch" id="myTabContent" style="height:500px;">
+
+  <div class="tab-pane fade show active chat_tab_style" id="myChat" role="tabpanel" aria-labelledby="myChat-tab">
+<ul class="list-unstyled">
+  <li class="media bg-light" style="padding:0.5em;">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Маша</h5>
+      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+    </div>
+        <img src="img/devushki1.png" class="mr-3" style="height:54px;" alt="...">
+  </li>
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/vi.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Вы</h5>
+      Cras sit amet nibh libero, in gravida nulla.
+    </div>
+  </li>
+  <li class="media bg-light" style="padding:0.5em;">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Наташа</h5>
+      Cras sit amet nibh libero, vestibulum in vulputate at, tempus viverra turpis.
+     </div>
+        <img src="img/devushki2.png" class="mr-3" style="height:54px;" alt="...">
+  </li>
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/video-chat-clipart.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Вы</h5>
+      Cras sit amet nibh libero, in gravida nulla.
+    </div>
+  </li>
+</ul>
+  </div>
+  <div class="tab-pane fade chat_tab_style" id="myMessages" role="tabpanel" aria-labelledby="myMessages-tab">
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Анюта</strong>
+    <small class="text-muted">2 часа назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Привет!
+  </div>
+</div>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Наташа</strong>
+    <small class="text-muted">2 секунды назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Как дела? Напиши мне.
+  </div>
+</div>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Анюта</strong>
+    <small class="text-muted">2 часа назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Привет!
+  </div>
+</div>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Наташа</strong>
+    <small class="text-muted">2 секунды назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Как дела? Напиши мне.
+  </div>
+</div>
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki2.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Анюта</strong>
+    <small class="text-muted">2 часа назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Привет!
+  </div>
+</div>
+
+<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="opacity:1; max-width:100%;">
+  <div class="toast-header gradient">
+    <img src="img/devushki1.png" class="rounded mr-2" style="height:54px;" alt="...">
+    <strong class="mr-auto">Наташа</strong>
+    <small class="text-muted">2 секунды назад</small>
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Как дела? Напиши мне.
+  </div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="myFriends" role="tabpanel" aria-labelledby="myFriends-tab">
+<ul class="list-unstyled">
+
+  <li class="media my-4 list-group-item-primary rounded-pill">
+
+        <img src="img/devushki2.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Маша</h5><!-- Button trigger modal -->
+      Одесса. 18 лет
+    </div>
+    <!-- Button trigger modal -->
+   <a class="#" href="#" role="button" data-toggle="modal" data-target="#frends_onlaynleModalCenter"><img src="img/14.png" class="ml-3" style="height:54px;" alt="Начать чат"></a>
+  </li>
+
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/devushki1.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Саша</h5>
+      Одесса. 18 лет
+    </div>
+    <img src="img/14_dis.png" class="ml-3" style="height:54px;" alt="...">
+  </li>
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/devushki2.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Маша</h5>
+      Одесса. 18 лет
+    </div>
+    <img src="img/14.png" class="ml-3" style="height:54px;" alt="...">
+  </li>
+
+  <li class="media my-4 list-group-item-primary rounded-pill">
+        <img src="img/devushki1.png" class="mr-3" style="height:54px;" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Саша</h5>
+      Одесса. 18 лет
+    </div>
+    <img src="img/14_dis.png" class="ml-3" style="height:54px;" alt="...">
+  </li>
+</ul>
+
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+</div>
+<!--
+  -->
+
+
+  </div>
+<!----ВТОРАЯ ВКЛАДКА-КОНЕЦ-->
+
+  <!----ТРЕТЬЯ ВКЛАДКА--->
+ <div class="tab-pane fade show" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab" style="">
+
+  <!--------------------------------------- НАВИГАЦИЯ 3 ВКЛАДКИ _МОБИЛНОЕ--------------->
+<nav class="navbar navbar-expand-lg navbar-light " id="#">
+  <a class="navbar-brand"  id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+
+    <span class="logo_text" style=""><img src="img/logo1.png" alt=""/>Lovemeet</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="float:right;">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+
+<li class="nav-item dropdown">
+    <a class="nav-link navbar-brand dropdown-toggle bg-transparent" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/Russia-flag.png" height="30" alt="Чат" title="Чат \ Сообщения"></a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#"><img src="img/Russia-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="#"><img src="img/Ukraine-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+      <a class="dropdown-item" href="#"><img src="img/Turkey-flag.png" height="50" alt="Чат" title="Чат \ Сообщения"></a>
+  </li>
+<li class="nav-item">
+    <a class="nav-link navbar-brand bg-transparent" id="pills-profile-tab" data-toggle="modal" href="#registerleModal" aria-controls="pills-profile" aria-selected="false"><img src="img/devushki2.png" class="rounded mr-2" style="height:35px;" alt="..."></a>
+  </li>
+</ul>
+  </div>
+</nav>
+   <!--------- НАВИГАЦИЯ 3 ВКЛАДКИ _МОБИЛНОЕ-----КОНЕЦ---------->
+<!---------------------------------------Женьщины------------>
+   <div class="container-fluid">
+  <ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Much longer nav link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+ </div>
+
+</div><!--------------------------------------- ВКЛАДКИ _----КОНЕЦ------------>
+
+</header>
+
+<div class="section_1" style="">
+<div class="float-sm-left box">
+<img src="img/avat1.png" class="img-fluid" alt=""/> </div>
+<div class="float-sm-left box">
+<h1 class="font-weight-normal section-title logo_color">Что такое <span class="logo_color">Lovemeet</span> ?</h1>
+<p class="text-justify" style="font-size:1.2em;"> Добро пожаловать в <span class="logo_color">Lovemeet</span> - видео знакомства нового поколения. Это инновационный онлайн видеочат, который позволит тебе мгновенно знакомиться с тысячами новых девушек в режиме реального времени в веселой и безопасной обстановке. Наша система сама подберет для тебя собеседницу в один клик. Убедись в этом лично! Просто нажми кнопку <span class="logo_color">«Попробуй бесплатно»</span>, и уже через несколько секунд ты попадешь в видеочат с девушками, которых ты никогда не встречал прежде. Попробуй бесплатный видео чат прямо сейчас!</p>
+</div>
+</div>
+
+<div style="margin-bottom: 1em; clear: both;">
+<div class="float-sm-left box" style="padding-top: 3em;">
+<h1 class="font-weight-normal section-title logo_color">Знакомства с девушками</h1>
+<p class="text-justify" style="font-size:1.2em;">Ищешь онлайн видео знакомства с девушками, но на сайтах встречаются только мужчины? <span class="logo_color">Lovemeet</span> - это уникальные видеочат знакомства, где девушки знакомятся первыми! Здесь тебя ждут только реальные и проверенные девушки с хорошим настроением, готовые к общению в любое время суток! Выбирай сам, общайся только с теми, кто тебе нравится, сохраняй контакты для дальнейшего общения, совершай видеозвонки и наслаждайся всеми невероятными опциями <span class="logo_color">Lovemeet</span>! За час в нашем онлайн видеочате ты сможешь познакомиться с более чем 60 девушками! <span class="logo_color">Попробуй видео знакомства</span> с девушками прямо сейчас!</p>
+</div>
+<div class="float-sm-left box">
+<img src="img/avat2.png" class="img-fluid" alt=""/> </div></div>
+
+<div class="shadow gradient box22" style=" width: 100%; display: inline-block; margin-top: 5em; padding-top:3em;">
+<h1 class="text-center font-weight-normal section-title-centr logo_color">Как это работает?</h1>
+<p class="font-weight-lighter text-center" style="">Пользоваться <span class="logo_color">Lovemeet</span>  очень просто - включи веб-камеру, и к тебе сразу же подключится случайная девушка. Если ты недоволен выбором системы видео чата, просто нажми кнопку<span class="font-weight-bolder"> <span class="logo_color">«Следующая»</span>.</span></p>
+<img src="img/avat3.png" class="center-img img-fluid" alt=""/>
+<div  class="rounded-pill" style="background-color:#f5cee0; padding-top: 0.5em; padding-bottom: 0.1em; margin-left: auto; margin-right: auto; width: 22em;">
+<h4 class="text-center"> <span class="badge badge-success" style=" background-color: #ff316a;">2</span> <span class="badge badge-success" style=" background-color: #ff316a;">5</span> <span class="badge badge-success" style=" background-color: #ff316a;">1</span> ДЕВУШЕК ОНЛАЙН</h4>
+ </div>
+
+    <div class="text-center" style="margin-top:0.5em;"><a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-danger btn-lg" role="button" aria-pressed="true" style="width:17em;">ПОПРОБУЙ БЕСПЛАТНО</a>
+    <p class="text-center">БЕЗ РИГИСТРАЦИИ</p>
+    </div>
+</div>
+<div class="box22" style="width: 100%; display: inline-block; padding-top:3em;">
+<h1 class="text-center font-weight-normal section-title-centr logo_color">Что особенного?</h1>
+<p class="font-weight-lighter text-center" style="">Забудь все, что ты знал об онлайн знакомствах. <span class="logo_color"> Lovemeet</span> - это принципиально новый формат. Никаких регистраций, заполнения профилей, личных данных и фейковых фотографий. Попробуй видео знакомства будущего прямо сейчас!</p>
+ <div class="d-flex justify-content-around bd-highlight" style="margin-top:5em;">
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <h5 class="text-center logo_color">АНОНИМНО И БЕЗОПАСНО</h5>
+</div>
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <h5 class="text-center logo_color">СВЕРХ-БЫСТРО</h5>
+ </div>
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <h5 class="text-center logo_color">ВЫСОКОЕ КАЧЕСТВО</h5>
+ </div>
+ </div>
+  <div class="d-flex bd-highlight">
+ <div class="justify-content-around">
+ <img src="img/videochat-1.png" class="rounded mx-auto d-block img-fluid" alt=""/> </div>
+ <div class="justify-content-around">
+ <img src="img/videochat-2.png" class="rounded mx-auto d-block img-fluid" alt=""/>
+ </div>
+ <div class="justify-content-around">
+ <img src="img/videochat-3.png" class="rounded mx-auto d-block img-fluid" alt=""/>
+ </div>
+ </div>
+ <div class="d-flex justify-content-around bd-highlight">
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <p class="font-weight-lighter text-center" style="padding-inline-end: 1em;
+ padding-inline-start: 1em; ">Мы не просим предоставлять личную информацию.</p> </div>
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <p class="font-weight-lighter text-center" style="padding-inline-end: 1em;
+ padding-inline-start: 1em;">Тебе не придется ждать, соединение происходит моментально.</p>
+ </div>
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <p class="font-weight-lighter text-center" style="padding-inline-end: 1em;
+ padding-inline-start: 1em;">Мы используем последние технологии в области передачи видеопотока.</p>
+ </div>
+ </div>
+</div>
+<div class="shadow  gradient box22" style="background-color: #a4c5d9; width: 100%; display: inline-block; margin-top: 5em; padding-top:3em;">
+<h1 class="text-center font-weight-normal section-title-centr logo_color">Попробуй бесплатно!</h1>
+<p class="font-weight-lighter text-center" style="">Осторожно, <span class="font-weight-bolder logo_color"> Lovemeet</span> затягивает, стоит только начать! Это уникальная возможность познакомиться и провести незабываемые часы с новыми подругами! Получи бесплатный пробный аккаунт и начни знакомиться с девушками прямо сейчас!</p>
+
+
+    <div class="text-center" style="margin-top:0.5em;"><a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-danger btn-lg" role="button" aria-pressed="true" style="width:17em;">ПОПРОБУЙ БЕСПЛАТНО</a>
+    <p class="text-center">БЕЗ РИГИСТРАЦИИ</p>
+<img src="img/videochat-08.png" class="img-fluid" alt=""/> </div>
+</div>
+<div class="shadow" style="width: 100%; display: inline-block; padding-top:3em;">
+<div class="d-flex justify-content-around bd-highlight">
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <p class="font-weight-lighter text-center" style="padding-inline-end: 1em;
+ padding-inline-start: 1em; font-size:0.8em;">Пользовательское соглашение</p> </div>
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <p class="font-weight-lighter text-center" style="padding-inline-end: 1em;
+ padding-inline-start: 1em; font-size:0.8em;">Политика конфиденциальности</p>
+ </div>
+ <div class="d-flex justify-content-around" style="width:300px;">
+ <p class="font-weight-lighter text-center" style="padding-inline-end: 1em;
+ padding-inline-start: 1em; font-size:0.8em;">Соответствие Закону США 18 U.S.C. Section 2257</p>
+ </div>
+ </div>
+</div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><span class="logo_text" style=" margin-left:1em;"><img src="img/logo1.png" height="60" alt=""/>Lovemeet</span></font></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mx-auto">
+     <li class="nav-item">
+        <a class="nav-link disabled" href="#"><font style="vertical-align: inherit;">Принимаем к оплате:
+</font></a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_visa.png" height="20" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_master.png" height="20" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_web.png" height="20" alt=""/></a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+<!-- Modal РЕДАКТИРОВАНИЕ ИМЕНИ-->
+<div class="modal fade" id="editing_naemleModal" tabindex="-1" role="dialog" aria-labelledby="editingleModalCenter-Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle"><img src="img/editing.png" class="mr-3" style="height:30px;" alt="...">РЕДАКТИРОВАНИЕ ИМЕНИ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <input class="form-control form-control-lg" type="text" placeholder="гость345">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+
+    <input type="button" class="btn btn-success"  data-dismiss="modal" id="capturewebcam" value="OK"/>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Контакты-Друзья-Вызов девушки он-лайн-->
+<div class="modal fade" id="frends_onlaynleModalCenter" tabindex="-1" role="dialog" aria-labelledby="frends_onlaynleModalCenter-Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle"><img src="img/devushki1.png" class="mr-3" style="height:54px;" alt="...">Маша |на связи |</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <h6> 18+ </h6>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+
+    <input type="button" class="btn btn-success btn-lg active"  data-dismiss="modal" id="capturewebcam" value="Начать ВидеоЧат"/>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -Стать премиум------>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document" style="max-width:1000px;">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#fbbe65;">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Купить премиум</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body gradient">
+        <div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header" style="background-color:#ff316a;">
+        <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 дня</font></font></h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 1.99 </font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ день</font></font></small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10 пользователей включены</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 ГБ памяти</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Доступ в справочный центр</font></font></li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal" data-target="#premiumModalCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Купить </font></font></button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header" style="background-color:#ff316a;">
+        <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 месяц</font></font></h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 9.99  </font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ месяц</font></font></small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">20 пользователей включены</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10 ГБ памяти</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Доступ в справочный центр</font></font></li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal" data-target="#premiumModalCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Купить </font></font></button>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header" style="background-color:#ff316a;">
+        <h4 class="my-0 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12 месяцев</font></font></h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 4.99 </font></font><small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/ год</font></font></small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">30 пользователей включены</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">15 ГБ памяти</font></font></li>
+          <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Доступ в справочный центр</font></font></li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-success" data-toggle="modal" data-target="#premiumModalCenter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Купить </font></font></button>
+
+      </div>
+    </div>
+  </div>
+
+      </div>
+      <div class="#">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"><span class="logo_text" style=" margin-left:1em;"><img src="img/logo1.png" style="height:60px;" alt=""/>Lovemeet</span></font></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mx-auto">
+     <li class="nav-item">
+        <a class="nav-link disabled" href="#"><font style="vertical-align: inherit;">Принимаем к оплате:
+</font></a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_visa.png" height="20" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_master.png" height="20" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/payment_visa.png);vertical-align: inherit;">Visa</font>
+        <img src="img/payment_web.png" height="20" alt=""/></a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal ОПЛАТА-->
+<div class="modal fade" id="premiumModalCenter" tabindex="-1" role="dialog" aria-labelledby="premiumModalCenterModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content gradient">
+      <div class="modal-header gradient">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Выберите карту</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input class="form-control" type="text" placeholder="Карта №..." readonly>
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-secondary">Подтвердить</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal ВОЙТИ \ РЕГИСТРАЦИЯ-->
+<div class="modal fade" id="registerleModal" tabindex="-1" role="dialog" aria-labelledby="registerleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Авторизация:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs" id="myTab_register" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#to_come_in_tab" role="tab" aria-controls="profile" aria-selected="false">Войти</a>
+  </li>
+  <li class="nav-item">
+ <a class="nav-link active" id="home-tab" data-toggle="tab" href="#register_tab" role="tab" aria-controls="home" aria-selected="true">Зарегистрироваться</a>
+
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent_register">
+  <div class="tab-pane fade show active" id="register_tab" role="tabpanel" aria-labelledby="home-tab">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email </label>
+    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="введите ваш Email">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Придумай пороль (мин 8 знаков)">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Запомнить</label>
+  </div>
+
+    <a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-primary btn-lg btn-block" role="button" aria-pressed="true" style="margin-top:3em;">Зарегистрироваться</a>
+</form>
+  </div>
+  <div class="tab-pane fade" id="to_come_in_tab" role="tabpanel" aria-labelledby="profile-tab">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email </label>
+    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="введите ваш Email">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Ваш пороль ">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Запомнить</label>
+  </div>
+  <a href="#pills-profile" id="pills-profile-tab" data-toggle="pill" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true" style="margin-top:3em;">Войти</a>
+</form>
+  </div>
+
+</div>
+      </div>
+      <div class=" justify-content-center">
+        <div><p class="text-center">или войдите с помощью</p></div>
+        <ul class="nav justify-content-center">
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+        <img src="img/google.png" height="40" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/google.png);vertical-align: inherit;">Visa</font>
+        <img src="img/facebook.png" height="40" alt=""/></a>
+      </li>
+       <li class="nav-item">
+       <a class="nav-link" href="admin/pages/examples/login.html"><font class="text-hide" style="background-image: url(img/google.png);vertical-align: inherit;">Visa</font>
+        <img src="img/mailru.png" height="40" alt=""/></a>
+      </li>
+     
+    </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal ЖЕНЬЩИНЫ \ РЕГИСТРАЦИЯ-->
+<div class="modal fade" id="registerWumenleModal" tabindex="-1" role="dialog" aria-labelledby="registerWumenleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="exampleModalCenterTitle">РЕГИСТРАЦИЯ:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+    
+
+  <div class="">
+  <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email </label>
+    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="введите ваш Email">
+
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Придумай пороль (мин 8 знаков)">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Запомнить</label>
+  </div>
+
+    <a href="#nav-wumen" id="nav-wumen-tab" data-toggle="tab" class="btn btn-primary close btn-lg btn-block" role="button" data-dismiss="modal" aria-pressed="true" style="margin-top:3em;">Зарегистрироваться</a>
+
+</form>
+  </div>
+  
+
+
+      </div>
+      <div class=" justify-content-center">
+        <div><p class="text-center">или войдите с помощью</p></div>
+        <ul class="nav justify-content-center">
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+        <img src="img/google.png" height="40" alt=""/></a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#"><font class="text-hide" style="background-image: url(img/google.png);vertical-align: inherit;">Visa</font>
+        <img src="img/facebook.png" height="40" alt=""/></a>
+      </li>
+       <li class="nav-item">
+       <a class="nav-link" href="admin/pages/examples/login.html"><font class="text-hide" style="background-image: url(img/google.png);vertical-align: inherit;">Visa</font>
+        <img src="img/mailru.png" height="40" alt=""/></a>
+      </li>
+     
+    </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Подарки-->
+<div class="modal fade" id="presentModalCenter" tabindex="-1" role="dialog" aria-labelledby="presentModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Выбрать подарок:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card-deck">
+  <div class="card">
+    <img src="img/kisspng.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">10 минут</h5>
+      
+    </div>
+    <div class="card-footer">
+      <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Выбрать</label>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/kisspng.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">20 минут</h5>
+      
+    </div>
+    <div class="card-footer">
+      <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Выбрать</label>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/kisspng.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">30 минут</h5>
+      
+    </div>
+    <div class="card-footer">
+      <div class="custom-control custom-checkbox">
+  <input type="checkbox" class="custom-control-input" id="customCheck1">
+  <label class="custom-control-label" for="customCheck1">Выбрать</label>
+</div>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-success">Выбрать</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<script src="js/html5.webcam.demo.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'DYd5eJ4xBQ';var d=document;var w=window;function l(){
+  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+  s.src = '//code.jivosite.com/script/widget/'+widget_id
+    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
+  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
+  else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+</body>
+</html>
